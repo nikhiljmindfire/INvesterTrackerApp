@@ -9,7 +9,7 @@ import { routing } from './AppRoutes';
 import * as Modules from './Modules';
 import { DialogServices } from './Services/DialogServices/DialogServices';
 import { ToasterService, ToasterModule } from "angular2-toaster/angular2-toaster";
-import { NgGridModule } from "angular2-grid";
+import { InputTextModule,DataTableModule,ButtonModule,DialogModule } from 'primeng/primeng';
 
 @NgModule({
   imports: [BrowserModule,
@@ -18,7 +18,10 @@ import { NgGridModule } from "angular2-grid";
     routing,
     MaterialModule.forRoot(),
     ToasterModule,
-    NgGridModule 
+    InputTextModule,
+    DataTableModule,
+    ButtonModule,
+    DialogModule
   ],
   declarations: [AppComponent,
     Modules.RegistrationComponent,
@@ -26,6 +29,7 @@ import { NgGridModule } from "angular2-grid";
     Modules.ForgetPasswordComponent,
     Modules.LandingScreenComponent,
     Modules.HomeComponent,
+    Modules.GridComponent,
     // Modules.DialogComponent,
     // Modules.DialogAnchorDirective
   ],

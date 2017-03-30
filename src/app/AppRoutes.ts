@@ -14,9 +14,10 @@ export const routes: Routes = [
   { path: 'LandingScreen', component: modules.LandingScreenComponent },
   { path: 'Register', component: RegistrationComponent },
   { path: 'Login', component: LoginComponent }, //login
+  { path: 'Grid', component: modules.GridComponent }, //login
   {
     path: 'home', children: [
-      { path: 'LandingScreen', component: modules.LandingScreenComponent }
+      { path: 'LandingScreen', component: modules.GridComponent }
     ]
   }
 ]

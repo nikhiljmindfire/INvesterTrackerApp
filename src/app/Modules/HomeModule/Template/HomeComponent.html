@@ -7,7 +7,7 @@
       <li class="nav-item"><a target="_self" class="nav-link" *ngIf="!(isLoggedIn )" (click)="openDialog($event)">Login</a></li>
       <li class="nav-item"><a class="nav-link" *ngIf="(isLoggedIn)" [routerLink]="['/LandingScreen']">Logout</a></li>
       <li class="nav-item"><a class="nav-link" *ngIf="!(isLoggedIn )" (click)="openDialog($event)">Signup</a></li>
-      <li> </li>
+      <li class="nav-item"><a class="nav-link" [routerLink]="['/Grid']">Show Grid</a> </li>
     </ul>
   </div>
 </nav>
