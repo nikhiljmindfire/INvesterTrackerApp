@@ -64,13 +64,13 @@ export class GridComponent {
         this.displayDialog = true;
     }
 
-    cloneCar(c: Car): Car {
-        let car = new PrimeCar();
-        for (let prop in c) {
-            car[prop] = c[prop];
-        }
-        return car;
-    }
+    // cloneCar(c: Car): Car {
+    //     let car = new PrimeCar();
+    //     for (let prop in c) {
+    //         car[prop] = c[prop];
+    //     }
+    //     return car;
+    // }
 
     findSelectedCarIndex(): number {
         return this.cars.indexOf(this.selectedCar);
