@@ -58,11 +58,11 @@ export class GridComponent {
         this.displayDialog = false;
     }
 
-    onRowSelect(event) {
-        this.newCar = false;
-        this.car = this.cloneCar(event.data);
-        this.displayDialog = true;
-    }
+    // onRowSelect(event) {
+    //     this.newCar = false;
+    //     this.car = this.cloneCar(event.data);
+    //     this.displayDialog = true;
+    // }
 
     cloneCar(c: Car): Car {
         let car = new PrimeCar();
