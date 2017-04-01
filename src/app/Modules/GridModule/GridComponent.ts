@@ -33,7 +33,7 @@ export class GridComponent {
     constructor(private carService: CarService) { }
 
     ngOnInit() {
-        this.carService.getCarsMedium().subscribe(cars => this.cars = cars);
+        this.carService.getCarsMedium().map(cars => this.cars = cars).subscribe();
     }
 
     showDialogToAdd() {
@@ -58,11 +58,11 @@ export class GridComponent {
         this.displayDialog = false;
     }
 
-    onRowSelect(event) {
-        this.newCar = false;
-        this.car = this.cloneCar(event.data);
-        this.displayDialog = true;
-    }
+    // onRowSelect(event) {
+    //     this.newCar = false;
+    //     this.car = this.cloneCar(event.data);
+    //     this.displayDialog = true;
+    // }
 
     // cloneCar(c: Car): Car {
     //     let car = new PrimeCar();
